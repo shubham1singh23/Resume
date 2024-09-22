@@ -101,3 +101,22 @@ function addEdu() {
   `;
   container.insertBefore(newEdu, container.lastElementChild);
 }
+function addPro() {
+  const container = document.querySelector(".pro");
+  const newPro = document.createElement("div");
+  newPro.classList.add("procontainer");
+  newPro.innerHTML = ` <div class="column">
+          <div class="about" id="names">
+            <label class="item">Project Title</label><input type="text" class="item" placeholder="eg. Shubham" />
+          </div>
+          <div class="about">
+            <label class="item"> Project Link</label><input type="text" class="item" placeholder="eg.link " />
+          </div>
+          <div class="about">
+            <label class="item">Description</label><input type="text" class="item" placeholder="eg. Description" />
+          </div>
+        </div>
+        <button type="button" class="remove-btn right" onclick="removeAchievement(this)">-</button>
+        `;
+  container.insertBefore(newPro, container.lastElementChild);
+}

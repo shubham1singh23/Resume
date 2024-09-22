@@ -146,6 +146,7 @@ input {
   align-self: flex-start;
   margin-left: 30px;
   margin-bottom: 20px;
+  margin-top: 10px;
   transition: all ease 1s;
 }
 .add:hover {
@@ -166,9 +167,10 @@ input {
 .expbox {
   display: flex;
   flex-direction: column;
+  border: 1px solid;
+  margin-top: 10px;
 }
 .exp {
-  border: 1px solid;
   width: 91vw;
   margin: auto;
 }
@@ -192,6 +194,19 @@ input {
 }
 input:hover {
   border: 2px rgb(87, 74, 74) solid;
+}
+.edubox {
+  border: 1px solid black;
+  margin-top: 10px;
+}
+.procontainer {
+  border: 1px solid black;
+  width: 91vw;
+  margin: auto;
+  margin-top: 10px;
+}
+.probtn {
+  margin-left: 30px;
 }
 @media (max-width: 700px) {
   .logo {
