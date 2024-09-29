@@ -26,39 +26,39 @@
       <div class="container align">
         <div class="column">
           <div class="about" id="names">
-            <label for="names" class="item"> First Name</label><input type="text" class="item"
+            <label for="names" class="item"> First Name</label><input type="text" class="item inputboxes"
               placeholder="eg. Shubham" />
           </div>
           <div class="about">
-            <label for="" class="item">Second Name</label><input type="text" class="item" placeholder="eg. Singh" />
+            <label for="" class="item">Second Name</label><input type="text" class="item inputboxes" placeholder="eg. Singh" />
           </div>
           <div class="about">
-            <label for="" class="item">Last Name</label><input type="text" class="item" placeholder="eg. Vinod" />
+            <label for="" class="item">Last Name</label><input type="text" class="item inputboxes" placeholder="eg. Vinod" />
           </div>
         </div>
         <div class="column">
           <div class="about" id="names">
-            <label for="names" class="item">Profile Image</label><input type="file" class="item" />
+            <label for="names" class="item">Profile Image</label><input type="file" class="item inputboxes pro" />
           </div>
           <div class="about">
-            <label for="" class="item">Designation</label><input type="text" class="item"
+            <label for="" class="item">Designation</label><input type="text" class="item inputboxes"
               placeholder="eg. Software Engineer" />
           </div>
           <div class="about">
-            <label for="" class="item">Address</label><input type="text" class="item" placeholder="eg. Dombivli" />
+            <label for="" class="item">Address</label><input type="text" class="item inputboxes" placeholder="eg. Dombivli" />
           </div>
         </div>
         <div class="column">
           <div class="about" id="names">
-            <label for="names" class="item"> Email</label><input type="text" class="item"
+            <label for="names" class="item"> Email</label><input type="text" class="item inputboxes"
               placeholder="eg.shubham1singh23@gmail.com" />
           </div>
           <div class="about">
-            <label for="" class="item">Phone Number</label><input type="text" class="item"
+            <label for="" class="item">Phone Number</label><input type="text" class="item inputboxes"
               placeholder="eg.8850852269" />
           </div>
           <div class="about">
-            <label for="" class="item">Summary</label><input type="text" class="item" placeholder="eg.About you" />
+            <label for="" class="item">Summary</label><input type="text" class="item inputboxes" placeholder="eg.About you" />
           </div>
         </div>
       </div>
@@ -72,10 +72,10 @@
       <div class="skillinput align">
         <div class="skillbox">
           <label for="" class="item">Skill Name</label>
-          <input type="text" class="item" placeholder="eg. Java" />
+          <input type="text" class="item inputskill1" placeholder="eg. Java" oninput="updateskill(1)" />
         </div>
         <div class="skillbtn">
-          <div class="add" onclick="addSkill()">+</div>
+          <div class="add skilladd" onclick="addSkill()">+</div>
         </div>
       </div>
     </div>
@@ -89,11 +89,11 @@
         <div class="achieveinput">
           <div class="achieveitem">
             <label for="title" class="item">Title</label>
-            <input type="text" class="item" placeholder="eg. Hackathon" />
+            <input type="text" class="item titleinput1" placeholder="eg. Hackathon" oniput="updateAchieve(1)"/>
           </div>
           <div class="achieveitem">
             <label for="title" class="item">Description</label>
-            <input type="text" class="item" placeholder="eg. Elaborate" />
+            <input type="text" class="item desinput1" placeholder="eg. Elaborate" oniput="updatedes(1)"/>
           </div>
         </div class="skillbtn">
         <div class="add" onclick="addAchievement()">+</div>
@@ -102,77 +102,92 @@
   </div>
 
   <div class="experience">
-
     <div class="heading">
       <h2>Experience</h2>
     </div>
     <div class="exp">
-      <div class="expbox">
+      <div class="expbox" id="expbox1">
         <div class="column">
           <div class="about" id="names">
-            <label class="item">Title</label><input type="text" class="item" placeholder="eg. Hr" />
+            <label for="names" class="item ">Title</label>
+            <input type="text" class="item exptitle1" placeholder="eg. Hr" oninput="updateTitle(1)" />
           </div>
           <div class="about">
-            <label for="" class="item">Company Name</label><input type="text" class="item"
-              placeholder="eg. Microsoft" />
+            <label for="" class="item ">Company Name</label>
+            <input type="text" class="item expcompany1" placeholder="eg. Microsoft" oninput="updateCompany(1)" />
           </div>
           <div class="about">
-            <label for="" class="item">Location</label><input type="text" class="item" placeholder="eg. Dombivli" />
+            <label for="" class="item ">Location</label>
+            <input type="text" class="item explocation1" placeholder="eg. Dombivli" oninput="updateLocation(1)" />
           </div>
         </div>
         <div class="column">
           <div class="about" id="names">
-            <label class="item"> Joining Date</label><input type="date" class="item" placeholder="eg. Shubham" />
+            <label for="names" class="item">Joining Date</label>
+            <input type="date" class="item expjoin1" oninput="updateJoin(1)" />
           </div>
           <div class="about">
-            <label class="item">Leaving Date</label><input type="date" class="item" placeholder="eg. " />
+            <label for="" class="item">Leaving Date</label>
+            <input type="date" class="item expleave1" oninput="updateLeave(1)" />
           </div>
           <div class="about">
-            <label class="item">Description</label><input type="text" class="item" placeholder="eg. Description" />
+            <label for="" class="item">Description</label>
+            <input type="text" class="item expdes1" placeholder="eg. Description" oninput="updateDescription(1)" />
           </div>
         </div>
       </div>
+      <!-- Button to add more experience -->
       <div class="skillbtn">
         <div class="add" onclick="addExp()">+</div>
       </div>
     </div>
   </div>
-  <div class="education"></div>
+  
+  <!-- Education Input Section -->
+<div class="education">
+  <div class="heading">
+    <h2>Education</h2>
+  </div>
+  <div class="exp edu">
+    <div class="expbox edubox" id="edubox1">
+      <div class="column">
+        <div class="about">
+          <label class="item">Institute</label>
+          <input type="text" class="item eduinst1" placeholder="e.g., Harvard University" oninput="updateInstitute(1)" />
+        </div>
+        <div class="about">
+          <label class="item">Course Name</label>
+          <input type="text" class="item educourse1" placeholder="e.g., Computer Science" oninput="updateCourse(1)" />
+        </div>
+        <div class="about">
+          <label class="item">Location</label>
+          <input type="text" class="item edulocation1" placeholder="e.g., Cambridge, MA" oninput="updateLocation(1)" />
+        </div>
+      </div>
 
-    <div class="heading">
-      <h2>Education</h2>
-    </div>
-    <div class="exp edu">
-      <div class="expbox edubox ">
-        <div class="column">
-          <div class="about" id="names">
-            <label class="item">Institute</label><input type="text" class="item" placeholder="eg. Hr" />
-          </div>
-          <div class="about">
-            <label for="" class="item">Course Name</label><input type="text" class="item"
-              placeholder="eg. Microsoft" />
-          </div>
-          <div class="about">
-            <label for="" class="item">Location</label><input type="text" class="item" placeholder="eg. Dombivli" />
-          </div>
+      <div class="column">
+        <div class="about">
+          <label class="item">Start Date</label>
+          <input type="date" class="item edujoin1" oninput="updateJoinDate(1)" />
         </div>
-        <div class="column">
-          <div class="about" id="names">
-            <label class="item"> Joining Date</label><input type="date" class="item" placeholder="eg. Shubham" />
-          </div>
-          <div class="about">
-            <label class="item">Leaving Date</label><input type="date" class="item" placeholder="eg. " />
-          </div>
-          <div class="about">
-            <label class="item">Description</label><input type="text" class="item" placeholder="eg. Description" />
-          </div>
+        <div class="about">
+          <label class="item">End Date</label>
+          <input type="date" class="item eduend1" oninput="updateLeaveDate(1)" />
+        </div>
+        <div class="about">
+          <label class="item">Description</label>
+          <input type="text" class="item edudes1" placeholder="e.g., Graduated with Honors" oninput="updateDescription(1)" />
         </div>
       </div>
-      <div class="skillbtn">
-        <div class="add" onclick="addEdu()">+</div>
-      </div>
+
+   
+    <!-- Button to add more education -->
+    <div class="skillbtn">
+      <div class="add" onclick="addEdu()">+</div>
     </div>
   </div>
+</div>
+
   <div class="projects"> 
     <div class="heading"><h2>Projects</h2></div>
     <div class="pro">
@@ -193,12 +208,343 @@
       <div class="addpro probtn">
         <div class="skillbtn">
           <div class="add" onclick="addPro()">+</div>
-
         </div>
       </div>
     </div>
   </div>
+
   <div class="getpdf"><button class="download">Download Resume</button></div>
+  <div class="livpreview">
+    <div class="heading"><h2>Live Preview</h2></div>
+    <div class="live">
+      <div class="leftlive">
+          <div class="profileimage">
+            <div class="imagepreview">
+              <img src="" alt="" class="imageprofile" style="display: none;">
+            </div>
+          </div>
+          <div class="leftcontainer leftchild">
+            <div class="aboutlive">
+              <div class="liveheading"><h3>About</h3></div>
+              <div class="aboutliveitem1 aboutitem fullname"></div>
+              <div class="aboutliveitem2 aboutitem fullname"></div>
+              <div class="aboutliveitem3 aboutitem fullname"></div>
+              <div class="aboutliveitem4 aboutitem"></div>
+              <div class="aboutliveitem5 aboutitem"></div>
+              <div class="aboutliveitem6 aboutitem"></div>
+              <div class="aboutliveitem7 aboutitem"></div>
+              <div class="aboutliveitem8 aboutitem"></div>
+              <div class="aboutliveitem9 aboutitem"></div>
+  
+            </div>
+            <div class="liveskills leftchild">
+              <div class="liveskillscontainer">
+                <div class="liveheading"><h3>Skills</h3></div>
+                <div class="skillslive">
+                <div class="skillitem1 skillitem"></div>
+                <div class="skillitem2 skillitem"></div>
+                <div class="skillitem3 skillitem"></div>
+                <div class="skillitem4 skillitem"></div>
+                <div class="skillitem5 skillitem"></div>
+                <div class="skillitem6 skillitem"></div>
+                <div class="skillitem7 skillitem"></div>
+                <div class="skillitem8 skillitem"></div>
+                <div class="skillitem9 skillitem"></div>
+                <div class="skillitem10 skillitem"></div>
+                <div class="skillitem11 skillitem"></div>
+                <div class="skillitem12 skillitem"></div>
+                <div class="skillitem13 skillitem"></div>
+                <div class="skillitem14 skillitem"></div>
+                <div class="skillitem15 skillitem"></div>
+                <div class="skillitem16 skillitem"></div>
+                <div class="skillitem17 skillitem"></div>
+                <div class="skillitem18 skillitem"></div>
+                <div class="skillitem19 skillitem"></div>
+                <div class="skillitem20 skillitem"></div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="rightlive">
+          <div class="liveachieve">
+            <div class="liveachievecontainer">
+              <div class="liveheading"><h3>Achievements</h3></div>
+              <div class="liveAchievers">
+                <div class="achieveitem1 achieveitem"></div>
+                <p class="desitem1 desitem"></p>
+                <div class="achieveitem2 achieveitem"></div>
+                <p class="desitem2 desitem"></p>
+                <div class="achieveitem3 achieveitem"></div>
+                 <p class="desitem3 desitem"></p>
+                <div class="achieveitem4 achieveitem"></div> 
+                <p class="desitem4 desitem"></p>
+
+                <div class="achieveitem5 achieveitem"></div>
+                <p class="desitem5 desitem"></p>
+                <div class="achieveitem6 achieveitem"></div>
+                <p class="desitem6 desitem"></p>
+                <div class="achieveitem7 achieveitem"></div>
+                <p class="desitem7 desitem"></p>
+                <div class="achieveitem8 achieveitem"></div>
+                <p class="desitem8 desitem"></p>
+                <div class="achieveitem9 achieveitem"></div>
+                <p class="desitem9 desitem"></p>
+                <div class="achieveitem10 achieveitem"></div>
+                <p class="desitem10 desitem"></p>
+              </div>
+
+            </div>
+          </div>
+          <div class="liveexp">
+            <div class="liveexpcontainer">
+              <div class="liveheading"><h3>Experience</h3></div>
+              <div class="liveexperience">
+                 <!-- Experience 1 -->
+<div class="titleexp1 titleexp"></div>
+<div class="companyexp1 companyexp fullname"></div>
+<div class="locationexp1 locationexp fullname"></div>
+<div class="joinexp1 joinexp fullname"></div>
+<div class="leaveexp1 leaveexp fullname"></div>
+<div class="desexp1 desexp"></div>
+
+<!-- Experience 2 -->
+<div class="titleexp2 titleexp"></div>
+<div class="companyexp2 companyexp fullname"></div>
+<div class="locationexp2 locationexp fullname"></div>
+<div class="joinexp2 joinexp fullname"></div>
+<div class="leaveexp2 leaveexp fullname"></div>
+<div class="desexp2 desexp"></div>
+
+<!-- Experience 3 -->
+<div class="titleexp3 titleexp"></div>
+<div class="companyexp3 companyexp fullname"></div>
+<div class="locationexp3 locationexp fullname"></div>
+<div class="joinexp3 joinexp fullname"></div>
+<div class="leaveexp3 leaveexp fullname"></div>
+<div class="desexp3 desexp"></div>
+
+<!-- Experience 4 -->
+<div class="titleexp4 titleexp"></div>
+<div class="companyexp4 companyexp fullname"></div>
+<div class="locationexp4 locationexp fullname"></div>
+<div class="joinexp4 joinexp fullname"></div>
+<div class="leaveexp4 leaveexp fullname"></div>
+<div class="desexp4 desexp"></div>
+
+<!-- Experience 5 -->
+<div class="titleexp5 titleexp"></div>
+<div class="companyexp5 companyexp fullname"></div>
+<div class="locationexp5 locationexp fullname"></div>
+<div class="joinexp5 joinexp fullname"></div>
+<div class="leaveexp5 leaveexp fullname"></div>
+<div class="desexp5 desexp"></div>
+
+<!-- Experience 6 -->
+<div class="titleexp6 titleexp"></div>
+<div class="companyexp6 companyexp fullname"></div>
+<div class="locationexp6 locationexp fullname"></div>
+<div class="joinexp6 joinexp fullname"></div>
+<div class="leaveexp6 leaveexp fullname"></div>
+<div class="desexp6 desexp"></div>
+
+<!-- Experience 7 -->
+<div class="titleexp7 titleexp"></div>
+<div class="companyexp7 companyexp fullname"></div>
+<div class="locationexp7 locationexp fullname"></div>
+<div class="joinexp7 joinexp fullname"></div>
+<div class="leaveexp7 leaveexp fullname"></div>
+<div class="desexp7 desexp"></div>
+
+<!-- Experience 8 -->
+<div class="titleexp8 titleexp"></div>
+<div class="companyexp8 companyexp fullname"></div>
+<div class="locationexp8 locationexp fullname"></div>
+<div class="joinexp8 joinexp fullname"></div>
+<div class="leaveexp8 leaveexp fullname"></div>
+<div class="desexp8 desexp"></div>
+
+<!-- Experience 9 -->
+<div class="titleexp9 titleexp"></div>
+<div class="companyexp9 companyexp fullname"></div>
+<div class="locationexp9 locationexp fullname"></div>
+<div class="joinexp9 joinexp fullname"></div>
+<div class="leaveexp9 leaveexp fullname"></div>
+<div class="desexp9 desexp"></div>
+
+<!-- Experience 10 -->
+<div class="titleexp10 titleexp"></div>
+<div class="companyexp10 companyexp fullname"></div>
+<div class="locationexp10 locationexp fullname"></div>
+<div class="joinexp10 joinexp fullname"></div>
+<div class="leaveexp10 leaveexp fullname"></div>
+<div class="desexp10 desexp"></div>
+
+              </div>
+            </div>
+          </div>
+          <div class="liveedu">
+            <div class="liveeducontainer">
+              <div class="liveheading"><h3>Education</h3></div>
+              <div class="liveedubox">
+          <!-- Institute -->
+<div class="instlive1 instlive"></div>
+<!-- Course -->
+<div class="courselive1 courselive fullname"></div>
+<!-- Location -->
+<div class="locationlive1 locationlive fullname"></div>
+<!-- Join Date -->
+<div class="joinlive1 joinlive fullname"></div>
+<!-- Leave Date -->
+<div class="leavelive1 leavelive fullname"></div>
+<!-- Description -->
+<div class="deslive1 deslive"></div>
+
+<!-- Institute -->
+<div class="instlive2 instlive"></div>
+<!-- Course -->
+<div class="courselive2 courselive fullname"></div>
+<!-- Location -->
+<div class="locationlive2 locationlive fullname"></div>
+<!-- Join Date -->
+<div class="joinlive2 joinlive fullname"></div>
+<!-- Leave Date -->
+<div class="leavelive2 leavelive fullname"></div>
+<!-- Description -->
+<div class="deslive2 deslive"></div>
+
+<!-- Institute -->
+<div class="instlive3 instlive"></div>
+<!-- Course -->
+<div class="courselive3 courselive fullname"></div>
+<!-- Location -->
+<div class="locationlive3 locationlive fullname"></div>
+<!-- Join Date -->
+<div class="joinlive3 joinlive fullname"></div>
+<!-- Leave Date -->
+<div class="leavelive3 leavelive fullname"></div>
+<!-- Description -->
+<div class="deslive3 deslive"></div>
+
+<!-- Institute -->
+<div class="instlive4 instlive"></div>
+<!-- Course -->
+<div class="courselive4 courselive fullname"></div>
+<!-- Location -->
+<div class="locationlive4 locationlive fullname"></div>
+<!-- Join Date -->
+<div class="joinlive4 joinlive fullname"></div>
+<!-- Leave Date -->
+<div class="leavelive4 leavelive fullname"></div>
+<!-- Description -->
+<div class="deslive4 deslive"></div>
+
+<!-- Institute -->
+<div class="instlive5 instlive"></div>
+<!-- Course -->
+<div class="courselive5 courselive fullname"></div>
+<!-- Location -->
+<div class="locationlive5 locationlive fullname"></div>
+<!-- Join Date -->
+<div class="joinlive5 joinlive fullname"></div>
+<!-- Leave Date -->
+<div class="leavelive5 leavelive fullname"></div>
+<!-- Description -->
+<div class="deslive5 deslive"></div>
+
+<!-- Institute -->
+<div class="instlive6 instlive"></div>
+<!-- Course -->
+<div class="courselive6 courselive fullname"></div>
+<!-- Location -->
+<div class="locationlive6 locationlive fullname"></div>
+<!-- Join Date -->
+<div class="joinlive6 joinlive fullname"></div>
+<!-- Leave Date -->
+<div class="leavelive6 leavelive fullname"></div>
+<!-- Description -->
+<div class="deslive6 deslive"></div>
+
+<!-- Institute -->
+<div class="instlive7 instlive"></div>
+<!-- Course -->
+<div class="courselive7 courselive fullname"></div>
+<!-- Location -->
+<div class="locationlive7 locationlive fullname"></div>
+<!-- Join Date -->
+<div class="joinlive7 joinlive fullname"></div>
+<!-- Leave Date -->
+<div class="leavelive7 leavelive fullname"></div>
+<!-- Description -->
+<div class="deslive7 deslive"></div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="livepro">
+            <div class="liveprocontainer">
+              <div class="liveheading"><h3>Projects</h3></div>
+              <div class="projector">
+                <!-- Project 1 -->
+<div class="protitle1 protitle"></div>
+<div class="gitlink1 gitlink"></div>
+<div class="prodes1 prodes"></div>
+
+<!-- Project 2 -->
+<div class="protitle2 protitle"></div>
+<div class="gitlink2 gitlink"></div>
+<div class="prodes2 prodes"></div>
+
+<!-- Project 3 -->
+<div class="protitle3 protitle"></div>
+<div class="gitlink3 gitlink"></div>
+<div class="prodes3 prodes"></div>
+
+<!-- Project 4 -->
+<div class="protitle4 protitle"></div>
+<div class="gitlink4 gitlink"></div>
+<div class="prodes4 prodes"></div>
+
+<!-- Project 5 -->
+<div class="protitle5 protitle"></div>
+<div class="gitlink5 gitlink"></div>
+<div class="prodes5 prodes"></div>
+
+<!-- Project 6 -->
+<div class="protitle6 protitle"></div>
+<div class="gitlink6 gitlink"></div>
+<div class="prodes6 prodes"></div>
+
+<!-- Project 7 -->
+<div class="protitle7 protitle"></div>
+<div class="gitlink7 gitlink"></div>
+<div class="prodes7 prodes"></div>
+
+<!-- Project 8 -->
+<div class="protitle8 protitle"></div>
+<div class="gitlink8 gitlink"></div>
+<div class="prodes8 prodes"></div>
+
+<!-- Project 9 -->
+<div class="protitle9 protitle"></div>
+<div class="gitlink9 gitlink"></div>
+<div class="prodes9 prodes"></div>
+
+<!-- Project 10 -->
+<div class="protitle10 protitle"></div>
+<div class="gitlink10 gitlink"></div>
+<div class="prodes10 prodes"></div>
+
+          
+              </div>
+  
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="script.js"></script>
 

@@ -208,6 +208,93 @@ input:hover {
 .probtn {
   margin-left: 30px;
 }
+.leftlive {
+  border: 1px solid white;
+  background-color: #333;
+  color: white;
+  width: 25%;
+  overflow-wrap: break-word; /* Allow long words to break */
+  word-wrap: break-word; /* Ensure long words wrap */
+  hyphens: auto;
+  margin: 0px 10px;
+}
+.leftcontainer {
+  margin-left: 10px;
+}
+.fullname {
+  display: inline;
+}
+.liveheading {
+  margin-bottom: 20px;
+}
+.rightlive {
+  width: 75%;
+  margin: 20px;
+  overflow-wrap: break-word; /* Allow long words to break */
+  word-wrap: break-word; /* Ensure long words wrap */
+  hyphens: auto;
+}
+.live {
+  border: 2px solid black;
+  width: 80vw;
+  margin: auto;
+  margin-left: 2rem;
+  gap: 5px;
+  display: inline-flex;
+  font-size: 25px;
+}
+.imagepreview {
+  z-index: 0;
+  margin: 5px;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 50%;
+  border: 1px solid white;
+  overflow: hidden; /* Hide overflow to maintain the square shape */
+  position: relative;
+  margin-top: 20px;
+}
+.profileimage {
+  width: 50%;
+  margin: auto;
+}
+.imageprofile {
+  z-index: 1;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Cover the entire square area */
+  position: absolute; /* Position absolute to fit properly */
+  top: 0;
+  left: 0;
+}
+.achieveitem {
+  font-weight: bold;
+}
+.titleexp {
+  font-weight: bolder;
+}
+.companyexp,
+.courselive {
+  font-weight: 300;
+}
+.joinexp,
+.joinlive {
+  font-size: medium;
+  padding: 2px;
+}
+.leaveexp,
+.leavelive {
+  padding: 2px;
+  font-size: medium;
+}
+.instlive {
+  font-weight: bolder;
+}
+.deslive {
+  font-size: smaller;
+}
+
 @media (max-width: 700px) {
   .logo {
     margin-left: 5px;
