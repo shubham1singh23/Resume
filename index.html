@@ -118,7 +118,7 @@
           </div>
           <div class="about">
             <label for="" class="item ">Location</label>
-            <input type="text" class="item explocation1" placeholder="eg. Dombivli" oninput="updateLocation(1)" />
+            <input type="text" class="item explocation1" placeholder="eg. Dombivli" oninput="updateLocation1(1)" />
           </div>
         </div>
         <div class="column">
@@ -132,7 +132,7 @@
           </div>
           <div class="about">
             <label for="" class="item">Description</label>
-            <input type="text" class="item expdes1" placeholder="eg. Description" oninput="updateDescription(1)" />
+            <input type="text" class="item expdes1" placeholder="eg. Description" oninput="updateDescription1(1)" />
           </div>
         </div>
       </div>
@@ -190,18 +190,18 @@
 
   <div class="projects"> 
     <div class="heading"><h2>Projects</h2></div>
-    <div class="pro">
+    <div class="projectors">
      
-      <div class="procontainer">
+      <div class="procontainer ">
         <div class="column">
           <div class="about" id="names">
-            <label class="item">Project Title</label><input type="text" class="item" placeholder="eg. Shubham" />
+            <label class="item">Project Title</label><input type="text" class="item projectinput1" placeholder="eg. Shubham"  oninput="updatePro(1)"/>
           </div>
           <div class="about">
-            <label class="item"> Project Link</label><input type="text" class="item" placeholder="eg.link " />
+            <label class="item"> Project Link</label><input type="text" class="item linkinput1" placeholder="eg.link " oninput="updateLink(1)" />
           </div>
           <div class="about">
-            <label class="item">Description</label><input type="text" class="item" placeholder="eg. Description" />
+            <label class="item">Description</label><input type="text" class="item prodesinput1" placeholder="eg. Description" oninput="updateDespro(1)" />
           </div>
         </div>
       </div>
@@ -213,7 +213,7 @@
     </div>
   </div>
 
-  <div class="getpdf"><button class="download">Download Resume</button></div>
+ 
   <div class="livpreview">
     <div class="heading"><h2>Live Preview</h2></div>
     <div class="live">
@@ -239,7 +239,7 @@
             </div>
             <div class="liveskills leftchild">
               <div class="liveskillscontainer">
-                <div class="liveheading"><h3>Skills</h3></div>
+                <div class="liveheading tops"><h3>Skills</h3></div>
                 <div class="skillslive">
                 <div class="skillitem1 skillitem"></div>
                 <div class="skillitem2 skillitem"></div>
@@ -302,84 +302,54 @@
               <div class="liveheading"><h3>Experience</h3></div>
               <div class="liveexperience">
                  <!-- Experience 1 -->
-<div class="titleexp1 titleexp"></div>
-<div class="companyexp1 companyexp fullname"></div>
-<div class="locationexp1 locationexp fullname"></div>
-<div class="joinexp1 joinexp fullname"></div>
-<div class="leaveexp1 leaveexp fullname"></div>
-<div class="desexp1 desexp"></div>
-
-<!-- Experience 2 -->
-<div class="titleexp2 titleexp"></div>
-<div class="companyexp2 companyexp fullname"></div>
-<div class="locationexp2 locationexp fullname"></div>
-<div class="joinexp2 joinexp fullname"></div>
-<div class="leaveexp2 leaveexp fullname"></div>
-<div class="desexp2 desexp"></div>
-
-<!-- Experience 3 -->
-<div class="titleexp3 titleexp"></div>
-<div class="companyexp3 companyexp fullname"></div>
-<div class="locationexp3 locationexp fullname"></div>
-<div class="joinexp3 joinexp fullname"></div>
-<div class="leaveexp3 leaveexp fullname"></div>
-<div class="desexp3 desexp"></div>
-
-<!-- Experience 4 -->
-<div class="titleexp4 titleexp"></div>
-<div class="companyexp4 companyexp fullname"></div>
-<div class="locationexp4 locationexp fullname"></div>
-<div class="joinexp4 joinexp fullname"></div>
-<div class="leaveexp4 leaveexp fullname"></div>
-<div class="desexp4 desexp"></div>
-
-<!-- Experience 5 -->
-<div class="titleexp5 titleexp"></div>
-<div class="companyexp5 companyexp fullname"></div>
-<div class="locationexp5 locationexp fullname"></div>
-<div class="joinexp5 joinexp fullname"></div>
-<div class="leaveexp5 leaveexp fullname"></div>
-<div class="desexp5 desexp"></div>
-
-<!-- Experience 6 -->
-<div class="titleexp6 titleexp"></div>
-<div class="companyexp6 companyexp fullname"></div>
-<div class="locationexp6 locationexp fullname"></div>
-<div class="joinexp6 joinexp fullname"></div>
-<div class="leaveexp6 leaveexp fullname"></div>
-<div class="desexp6 desexp"></div>
-
-<!-- Experience 7 -->
-<div class="titleexp7 titleexp"></div>
-<div class="companyexp7 companyexp fullname"></div>
-<div class="locationexp7 locationexp fullname"></div>
-<div class="joinexp7 joinexp fullname"></div>
-<div class="leaveexp7 leaveexp fullname"></div>
-<div class="desexp7 desexp"></div>
-
-<!-- Experience 8 -->
-<div class="titleexp8 titleexp"></div>
-<div class="companyexp8 companyexp fullname"></div>
-<div class="locationexp8 locationexp fullname"></div>
-<div class="joinexp8 joinexp fullname"></div>
-<div class="leaveexp8 leaveexp fullname"></div>
-<div class="desexp8 desexp"></div>
-
-<!-- Experience 9 -->
-<div class="titleexp9 titleexp"></div>
-<div class="companyexp9 companyexp fullname"></div>
-<div class="locationexp9 locationexp fullname"></div>
-<div class="joinexp9 joinexp fullname"></div>
-<div class="leaveexp9 leaveexp fullname"></div>
-<div class="desexp9 desexp"></div>
-
-<!-- Experience 10 -->
-<div class="titleexp10 titleexp"></div>
-<div class="companyexp10 companyexp fullname"></div>
-<div class="locationexp10 locationexp fullname"></div>
-<div class="joinexp10 joinexp fullname"></div>
-<div class="leaveexp10 leaveexp fullname"></div>
-<div class="desexp10 desexp"></div>
+                 <div class="titleexp1 titleexp"></div>
+                 <div class="companyexp1 companyexp fullname"></div>
+                 <div class="locationexp1 locationexp fullname"></div>
+                 <div class="joinexp1 joinexp fullname"></div>
+                 <div class="leaveexp1 leaveexp fullname"></div>
+                 <div class="desexp1 desexp"></div>
+                 
+                 <!-- Experience 2 -->
+                 <div class="titleexp2 titleexp"></div>
+                 <div class="companyexp2 companyexp fullname"></div>
+                 <div class="locationexp2 locationexp fullname"></div>
+                 <div class="joinexp2 joinexp fullname"></div>
+                 <div class="leaveexp2 leaveexp fullname"></div>
+                 <div class="desexp2 desexp"></div>
+                 
+                 <!-- Experience 3 -->
+                 <div class="titleexp3 titleexp"></div>
+                 <div class="companyexp3 companyexp fullname"></div>
+                 <div class="locationexp3 locationexp fullname"></div>
+                 <div class="joinexp3 joinexp fullname"></div>
+                 <div class="leaveexp3 leaveexp fullname"></div>
+                 <div class="desexp3 desexp"></div>
+                 
+                 <!-- Experience 4 -->
+                 <div class="titleexp4 titleexp"></div>
+                 <div class="companyexp4 companyexp fullname"></div>
+                 <div class="locationexp4 locationexp fullname"></div>
+                 <div class="joinexp4 joinexp fullname"></div>
+                 <div class="leaveexp4 leaveexp fullname"></div>
+                 <div class="desexp4 desexp"></div>
+                 
+                 <!-- Experience 5 -->
+                 <div class="titleexp5 titleexp"></div>
+                 <div class="companyexp5 companyexp fullname"></div>
+                 <div class="locationexp5 locationexp fullname"></div>
+                 <div class="joinexp5 joinexp fullname"></div>
+                 <div class="leaveexp5 leaveexp fullname"></div>
+                 <div class="desexp5 desexp"></div>
+                 
+                 <!-- Experience 6 -->
+                 <div class="titleexp6 titleexp"></div>
+                 <div class="companyexp6 companyexp fullname"></div>
+                 <div class="locationexp6 locationexp fullname"></div>
+                 <div class="joinexp6 joinexp fullname"></div>
+                 <div class="leaveexp6 leaveexp fullname"></div>
+                 <div class="desexp6 desexp"></div>
+                 
+                 
 
               </div>
             </div>
@@ -454,30 +424,7 @@
 <div class="deslive5 deslive"></div>
 
 <!-- Institute -->
-<div class="instlive6 instlive"></div>
-<!-- Course -->
-<div class="courselive6 courselive fullname"></div>
-<!-- Location -->
-<div class="locationlive6 locationlive fullname"></div>
-<!-- Join Date -->
-<div class="joinlive6 joinlive fullname"></div>
-<!-- Leave Date -->
-<div class="leavelive6 leavelive fullname"></div>
-<!-- Description -->
-<div class="deslive6 deslive"></div>
 
-<!-- Institute -->
-<div class="instlive7 instlive"></div>
-<!-- Course -->
-<div class="courselive7 courselive fullname"></div>
-<!-- Location -->
-<div class="locationlive7 locationlive fullname"></div>
-<!-- Join Date -->
-<div class="joinlive7 joinlive fullname"></div>
-<!-- Leave Date -->
-<div class="leavelive7 leavelive fullname"></div>
-<!-- Description -->
-<div class="deslive7 deslive"></div>
 
 
               </div>
@@ -517,25 +464,7 @@
 <div class="gitlink6 gitlink"></div>
 <div class="prodes6 prodes"></div>
 
-<!-- Project 7 -->
-<div class="protitle7 protitle"></div>
-<div class="gitlink7 gitlink"></div>
-<div class="prodes7 prodes"></div>
 
-<!-- Project 8 -->
-<div class="protitle8 protitle"></div>
-<div class="gitlink8 gitlink"></div>
-<div class="prodes8 prodes"></div>
-
-<!-- Project 9 -->
-<div class="protitle9 protitle"></div>
-<div class="gitlink9 gitlink"></div>
-<div class="prodes9 prodes"></div>
-
-<!-- Project 10 -->
-<div class="protitle10 protitle"></div>
-<div class="gitlink10 gitlink"></div>
-<div class="prodes10 prodes"></div>
 
           
               </div>
@@ -544,8 +473,11 @@
           </div>
       </div>
     </div>
+    <div class="getpdf"><button class="download" onclick="download()">Download Resume</button></div>
   </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
 <script src="script.js"></script>
 
 

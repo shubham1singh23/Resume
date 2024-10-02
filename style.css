@@ -209,17 +209,19 @@ input:hover {
   margin-left: 30px;
 }
 .leftlive {
-  border: 1px solid white;
   background-color: #333;
   color: white;
   width: 25%;
   overflow-wrap: break-word; /* Allow long words to break */
   word-wrap: break-word; /* Ensure long words wrap */
   hyphens: auto;
-  margin: 0px 10px;
+  margin: 0px;
 }
 .leftcontainer {
   margin-left: 10px;
+}
+.nikal input {
+  width: 40vw;
 }
 .fullname {
   display: inline;
@@ -227,9 +229,13 @@ input:hover {
 .liveheading {
   margin-bottom: 20px;
 }
+.tops {
+  margin-top: 5px;
+}
 .rightlive {
   width: 75%;
-  margin: 20px;
+  margin: 10px;
+  margin-right: 80px;
   overflow-wrap: break-word; /* Allow long words to break */
   word-wrap: break-word; /* Ensure long words wrap */
   hyphens: auto;
@@ -237,6 +243,8 @@ input:hover {
 .live {
   border: 2px solid black;
   width: 80vw;
+  max-width: 100%;
+  padding: 0;
   margin: auto;
   margin-left: 2rem;
   gap: 5px;
@@ -254,10 +262,10 @@ input:hover {
   position: relative;
   margin-top: 20px;
 }
-.profileimage {
+/* .profileimage {
   width: 50%;
   margin: auto;
-}
+} */
 .imageprofile {
   z-index: 1;
   overflow: hidden;
@@ -283,6 +291,10 @@ input:hover {
   font-size: medium;
   padding: 2px;
 }
+.protitle {
+  font-weight: bolder;
+  font-size: 25px;
+}
 .leaveexp,
 .leavelive {
   padding: 2px;
@@ -293,6 +305,9 @@ input:hover {
 }
 .deslive {
   font-size: smaller;
+}
+.hidden {
+  display: none;
 }
 
 @media (max-width: 700px) {

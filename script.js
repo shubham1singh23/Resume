@@ -120,7 +120,7 @@ function addExp() {
       </div>
       <div class="about">
         <label for="" class="item ">Location</label>
-        <input type="text" class="item explocation${expcounter}" placeholder="eg. Dombivli" oninput="updateLocation(${expcounter})" />
+        <input type="text" class="item explocation${expcounter}" placeholder="eg. Dombivli" oninput="updateLocation1(${expcounter})" />
       </div>
     </div>
     <div class="column">
@@ -134,7 +134,7 @@ function addExp() {
       </div>
       <div class="about">
         <label for="" class="item ">Description</label>
-        <input type="text" class="item expdes${expcounter}" placeholder="eg. Description" oninput="updateDescription(${expcounter})" />
+        <input type="text" class="item expdes${expcounter}" placeholder="eg. Description" oninput="updateDescription1(${expcounter})" />
       </div>
     </div>
     <button type="button" class="remove-btn right" onclick="removeExperience(${expcounter})">-</button>
@@ -176,13 +176,18 @@ function updateTitle(counter) {
 function updateCompany(counter) {
   const input = document.querySelector(`.expcompany${counter}`);
   const livePreview = document.querySelector(`.companyexp${counter}`);
+  console.log(input, livePreview); // This will log the input and live preview elements to check if they exist
+
   livePreview.textContent = input ? input.value : "";
 }
 
 // Function to update Location
-function updateLocation(counter) {
+function updateLocation1(counter) {
+  console.log("HII");
   const input = document.querySelector(`.explocation${counter}`);
   const livePreview = document.querySelector(`.locationexp${counter}`);
+  console.log(input, livePreview); // This will log the input and live preview elements to check if they exist
+
   livePreview.textContent = input ? input.value : "";
 }
 
@@ -201,7 +206,7 @@ function updateLeave(counter) {
 }
 
 // Function to update Description
-function updateDescription(counter) {
+function updateDescription1(counter) {
   const input = document.querySelector(`.expdes${counter}`);
   const livePreview = document.querySelector(`.desexp${counter}`);
   livePreview.textContent = input ? input.value : "";
@@ -309,23 +314,57 @@ function updateDescription(counter) {
 }
 let projectCounter = 1;
 function addPro() {
-  const container = document.querySelector(".pro");
+  projectCounter++;
+  const container = document.querySelector(".projectors");
   const newPro = document.createElement("div");
+
   newPro.classList.add("procontainer");
-  newPro.innerHTML = ` <div class="column">
+  newPro.setAttribute("id", `proj${projectCounter}`);
+
+  newPro.innerHTML = ` 
+  <div class="column">
           <div class="about" id="names">
-            <label class="item">Project Title</label><input type="text" class="item  projectinput${projectCounter}" placeholder="eg. Shubham" />
+            <label class="item">Project Title</label><input type="text" class="item  projectinput${projectCounter}" placeholder="eg. Shubham"  oninput="updatePro(${projectCounter})"/>
           </div>
           <div class="about">
-            <label class="item"> Project Link</label><input type="text" class="item projectinput${projectCounter}" placeholder="eg.link " />
+            <label class="item"> Project Link</label><input type="text" class="item linkinput${projectCounter}" placeholder="eg.link " oninput="updateLink(${projectCounter})"/>
           </div>
           <div class="about">
-            <label class="item">Description</label><input type="text" class="item projectinput${projectCounter}" placeholder="eg. Description" />
+            <label class="item">Description</label><input type="text" class="item prodesinput${projectCounter}" placeholder="eg. Description" oninput="updateDespro(${projectCounter})"/>
           </div>
-        </div>
-        <button type="button" class="remove-btn right" onclick="removeAchievement(this)">-</button>
+  </div>
+  <button type="button" class="remove-btn right" onclick="removePro(${projectCounter})">-</button>
+
         `;
+  console.log(container, newPro);
   container.insertBefore(newPro, container.lastElementChild);
+}
+function removePro(counter) {
+  const container = document.querySelector(`#proj${counter}`);
+  if (container) {
+    container.remove();
+  }
+  const title = document.querySelector(`protitle${counter}`);
+  const link = document.querySelector(`gitlink${counter}`);
+  const desh = document.querySelector(`prodes${counter}`);
+  if (title) title.textContent = "";
+  if (link) link.textContent = "";
+  if (desh) desh.textContent = "";
+}
+function updatePro(count) {
+  const input = document.querySelector(`.projectinput${count}`);
+  const preview = document.querySelector(`.protitle${count}`);
+  preview.textContent = input ? input.value : "";
+}
+function updateLink(count) {
+  const input = document.querySelector(`.linkinput${count}`);
+  const preview = document.querySelector(`.gitlink${count}`);
+  preview.textContent = input ? input.value : "";
+}
+function updateDespro(count) {
+  const input = document.querySelector(`.prodesinput${count}`);
+  const preview = document.querySelector(`.prodes${count}`);
+  preview.textContent = input ? input.value : "";
 }
 //for about section
 const inputboxes = document.querySelectorAll(".inputboxes");
@@ -377,6 +416,18 @@ function updateskill(skillNumber = 1) {
   if (skillPreview) {
     skillPreview.textContent = skillValue;
   }
+}
+function download() {
+  const resume = document.querySelector(".live");
+  html2pdf()
+    .from(resume)
+    .set({
+      margin: 1,
+      filename: "resume.pdf",
+      html2canvas: { scale: 2 }, // Increase scale for better quality
+      jsPDF: { orientation: "portrait" }, // Set orientation
+    })
+    .save();
 }
 
 //function for the Achievement
