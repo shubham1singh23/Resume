@@ -1,0 +1,21 @@
+.main {
+  background-image: url(./dark.webp);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center center; /* Centers the image */
+}
+.button {
+  color: black;
+  background-color: white;
+}
+* {
+  color: white;
+}
+h1 {
+  color: white;
+}
+.nav {
+  background-color: black;
+}
