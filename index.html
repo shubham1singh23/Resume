@@ -18,6 +18,22 @@
       <div class="navitem"><a href="index.html">Reset</a></div>
     </div>
   </nav>
+  <div class="skills">
+    <div class="skillscontainer">
+      <div class="heading align">
+        <h2>Select Theme</h2>
+      </div>
+      <div class="skillinput align">
+        <div class="skillbox">
+          <label for="" class="item">Select Color (Scroll and see resume in live preview)</label>
+          <input type="color" list ="colors"class="item input colorss" placeholder="" oninput="updatecolor() ;updateJoin() ; updateJoinDate();updateLeave();updateLeaveDate(); " required/>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
   <div class="forms">
     <form action="">
       <div class="heading align">
@@ -213,38 +229,7 @@
     </div>
   </div>
 
- <div class="skills">
-    <div class="skillscontainer">
-      <div class="heading align">
-        <h2>Select Theme</h2>
-      </div>
-      <div class="skillinput align">
-        <div class="skillbox">
-          <label for="" class="item">Select COlor</label>
-          <input type="text" list ="colors"class="item input colorss" placeholder="eg. Java" oninput="updatecolor()" />
-        </div>
-       
-      </div>
-    </div>
-  </div>
-  <datalist id="colors">
-    <option value="Red"></option>
-    <option value="Green"></option>
-    <option value="Blue"></option>
-    <option value="Purple"></option>
-    <option value="Brown"></option>
-    <option value="Gray"></option>
-    <option value="Black"></option>
-    <option value="Navy"></option>
-    <option value="DarkGreen"></option>
-    <option value="DarkRed"></option>
-    <option value="DarkBlue"></option>
-    <option value="DarkMagenta"></option>
-    <option value="Maroon"></option>
-    <option value="Olive"></option>
-    <option value="MidnightBlue"></option>
-    <option value="DarkSlateGray"></option>
-</datalist>
+ 
 
   <div class="livpreview">
     <div class="heading"><h2>Live Preview</h2></div>
@@ -302,84 +287,116 @@
       <div class="rightlive">
           <div class="liveachieve">
             <div class="liveachievecontainer">
-              <div class="liveheading"><h3>Achievements</h3></div>
+              <div class="liveheading tops"><h3>Achievements</h3></div>
               <div class="liveAchievers">
-                <div class="achieveitem1 achieveitem"></div>
-                <p class="desitem1 desitem"></p>
-                <div class="achieveitem2 achieveitem"></div>
-                <p class="desitem2 desitem"></p>
-                <div class="achieveitem3 achieveitem"></div>
-                 <p class="desitem3 desitem"></p>
-                <div class="achieveitem4 achieveitem"></div> 
-                <p class="desitem4 desitem"></p>
+                <div class="achieveitem1 achieveitem "></div>
+<p class="desitem1 desitem "></p>
+<div class="achieveitem2 achieveitem "></div>
+<p class="desitem2 desitem hidden"></p>
+<div class="achieveitem3 achieveitem hidden"></div>
+<p class="desitem3 desitem hidden"></p>
+<div class="achieveitem4 achieveitem hidden"></div>
+<p class="desitem4 desitem hidden"></p>
 
-                <div class="achieveitem5 achieveitem"></div>
-                <p class="desitem5 desitem"></p>
-                <div class="achieveitem6 achieveitem"></div>
-                <p class="desitem6 desitem"></p>
-                <div class="achieveitem7 achieveitem"></div>
-                <p class="desitem7 desitem"></p>
-                <div class="achieveitem8 achieveitem"></div>
-                <p class="desitem8 desitem"></p>
-                <div class="achieveitem9 achieveitem"></div>
-                <p class="desitem9 desitem"></p>
-                <div class="achieveitem10 achieveitem"></div>
-                <p class="desitem10 desitem"></p>
+<div class="achieveitem5 achieveitem hidden"></div>
+<p class="desitem5 desitem hidden"></p>
+<div class="achieveitem6 achieveitem hidden"></div>
+<p class="desitem6 desitem hidden"></p>
+<div class="achieveitem7 achieveitem hidden"></div>
+<p class="desitem7 desitem hidden"></p>
+<div class="achieveitem8 achieveitem hidden"></div>
+<p class="desitem8 desitem hidden"></p>
+<div class="achieveitem9 achieveitem hidden"></div>
+<p class="desitem9 desitem hidden"></p>
+<div class="achieveitem10 achieveitem hidden"></div>
+<p class="desitem10 desitem hidden"></p>
+
               </div>
 
             </div>
           </div>
           <div class="liveexp">
             <div class="liveexpcontainer">
-              <div class="liveheading"><h3>Experience</h3></div>
+              <div class="liveheading tops"><h3>Experience</h3></div>
               <div class="liveexperience">
                  <!-- Experience 1 -->
-                 <div class="titleexp1 titleexp"></div>
-                 <div class="companyexp1 companyexp fullname"></div>
-                 <div class="locationexp1 locationexp fullname"></div>
-                 <div class="joinexp1 joinexp fullname"></div>
-                 <div class="leaveexp1 leaveexp fullname"></div>
-                 <div class="desexp1 desexp"></div>
-                 
+                 <div class="titleexp1 titleexp "></div>
+                 <div class="companyexp1 companyexp fullname "></div>
+                 <div class="locationexp1 locationexp fullname "></div>
+                 <div class="joinexp1 joinexp fullname "></div>
+                 <div class="leaveexp1 leaveexp fullname "></div>
+                 <div class="desexp1 desexp hidden"></div>
                  <!-- Experience 2 -->
-                 <div class="titleexp2 titleexp"></div>
-                 <div class="companyexp2 companyexp fullname"></div>
-                 <div class="locationexp2 locationexp fullname"></div>
-                 <div class="joinexp2 joinexp fullname"></div>
-                 <div class="leaveexp2 leaveexp fullname"></div>
-                 <div class="desexp2 desexp"></div>
-                 
-                 <!-- Experience 3 -->
-                 <div class="titleexp3 titleexp"></div>
-                 <div class="companyexp3 companyexp fullname"></div>
-                 <div class="locationexp3 locationexp fullname"></div>
-                 <div class="joinexp3 joinexp fullname"></div>
-                 <div class="leaveexp3 leaveexp fullname"></div>
-                 <div class="desexp3 desexp"></div>
-                 
-                 <!-- Experience 4 -->
-                 <div class="titleexp4 titleexp"></div>
-                 <div class="companyexp4 companyexp fullname"></div>
-                 <div class="locationexp4 locationexp fullname"></div>
-                 <div class="joinexp4 joinexp fullname"></div>
-                 <div class="leaveexp4 leaveexp fullname"></div>
-                 <div class="desexp4 desexp"></div>
-                 
-                 <!-- Experience 5 -->
-                 <div class="titleexp5 titleexp"></div>
-                 <div class="companyexp5 companyexp fullname"></div>
-                 <div class="locationexp5 locationexp fullname"></div>
-                 <div class="joinexp5 joinexp fullname"></div>
-                 <div class="leaveexp5 leaveexp fullname"></div>
-                 <div class="desexp5 desexp"></div>
-                 
-                 <!-- Experience 6 -->
-                 <div class="titleexp6 titleexp"></div>
-                 <div class="companyexp6 companyexp fullname"></div>
-                 <div class="locationexp6 locationexp fullname"></div>
-                 <div class="joinexp6 joinexp fullname"></div>
-                 <div class="leaveexp6 leaveexp fullname"></div>
-                 <div class="desexp6 desexp"></div>
+<div class="titleexp2 titleexp hidden"></div>
+<div class="companyexp2 companyexp fullname hidden"></div>
+<div class="locationexp2 locationexp fullname hidden"></div>
+<div class="joinexp2 joinexp fullname hidden"></div>
+<div class="leaveexp2 leaveexp fullname hidden"></div>
+<div class="desexp2 desexp hidden"></div>
+
+<!-- Experience 3 -->
+<div class="titleexp3 titleexp hidden"></div>
+<div class="companyexp3 companyexp fullname hidden"></div>
+<div class="locationexp3 locationexp fullname hidden"></div>
+<div class="joinexp3 joinexp fullname hidden"></div>
+<div class="leaveexp3 leaveexp fullname hidden"></div>
+<div class="desexp3 desexp hidden"></div>
+
+<!-- Experience 4 -->
+<div class="titleexp4 titleexp hidden"></div>
+<div class="companyexp4 companyexp fullname hidden"></div>
+<div class="locationexp4 locationexp fullname hidden"></div>
+<div class="joinexp4 joinexp fullname hidden"></div>
+<div class="leaveexp4 leaveexp fullname hidden"></div>
+<div class="desexp4 desexp hidden"></div>
+
+<!-- Experience 5 -->
+<div class="titleexp5 titleexp hidden"></div>
+<div class="companyexp5 companyexp fullname hidden"></div>
+<div class="locationexp5 locationexp fullname hidden"></div>
+<div class="joinexp5 joinexp fullname hidden"></div>
+<div class="leaveexp5 leaveexp fullname hidden"></div>
+<div class="desexp5 desexp hidden"></div>
+
+<!-- Experience 6 -->
+<div class="titleexp6 titleexp hidden"></div>
+<div class="companyexp6 companyexp fullname hidden"></div>
+<div class="locationexp6 locationexp fullname hidden"></div>
+<div class="joinexp6 joinexp fullname hidden"></div>
+<div class="leaveexp6 leaveexp fullname hidden"></div>
+<div class="desexp6 desexp hidden"></div>
+
+<!-- Experience 7 -->
+<div class="titleexp7 titleexp hidden"></div>
+<div class="companyexp7 companyexp fullname hidden"></div>
+<div class="locationexp7 locationexp fullname hidden"></div>
+<div class="joinexp7 joinexp fullname hidden"></div>
+<div class="leaveexp7 leaveexp fullname hidden"></div>
+<div class="desexp7 desexp hidden"></div>
+
+<!-- Experience 8 -->
+<div class="titleexp8 titleexp hidden"></div>
+<div class="companyexp8 companyexp fullname hidden"></div>
+<div class="locationexp8 locationexp fullname hidden"></div>
+<div class="joinexp8 joinexp fullname hidden"></div>
+<div class="leaveexp8 leaveexp fullname hidden"></div>
+<div class="desexp8 desexp hidden"></div>
+
+<!-- Experience 9 -->
+<div class="titleexp9 titleexp hidden"></div>
+<div class="companyexp9 companyexp fullname hidden"></div>
+<div class="locationexp9 locationexp fullname hidden"></div>
+<div class="joinexp9 joinexp fullname hidden"></div>
+<div class="leaveexp9 leaveexp fullname hidden"></div>
+<div class="desexp9 desexp hidden"></div>
+
+<!-- Experience 10 -->
+<div class="titleexp10 titleexp hidden"></div>
+<div class="companyexp10 companyexp fullname hidden"></div>
+<div class="locationexp10 locationexp fullname hidden"></div>
+<div class="joinexp10 joinexp fullname hidden"></div>
+<div class="leaveexp10 leaveexp fullname hidden"></div>
+<div class="desexp10 desexp hidden"></div>
                  
                  
 
@@ -403,59 +420,124 @@
 <!-- Description -->
 <div class="deslive1 deslive"></div>
 
-<!-- Institute -->
-<div class="instlive2 instlive"></div>
-<!-- Course -->
-<div class="courselive2 courselive fullname"></div>
-<!-- Location -->
-<div class="locationlive2 locationlive fullname"></div>
-<!-- Join Date -->
-<div class="joinlive2 joinlive fullname"></div>
-<!-- Leave Date -->
-<div class="leavelive2 leavelive fullname"></div>
-<!-- Description -->
-<div class="deslive2 deslive"></div>
 
-<!-- Institute -->
-<div class="instlive3 instlive"></div>
-<!-- Course -->
-<div class="courselive3 courselive fullname"></div>
-<!-- Location -->
-<div class="locationlive3 locationlive fullname"></div>
-<!-- Join Date -->
-<div class="joinlive3 joinlive fullname"></div>
-<!-- Leave Date -->
-<div class="leavelive3 leavelive fullname"></div>
-<!-- Description -->
-<div class="deslive3 deslive"></div>
 
-<!-- Institute -->
-<div class="instlive4 instlive"></div>
+<!-- Institute 2 -->
+<div class="instlive2 instlive hidden"></div>
 <!-- Course -->
-<div class="courselive4 courselive fullname"></div>
+<div class="courselive2 courselive fullname hidden"></div>
 <!-- Location -->
-<div class="locationlive4 locationlive fullname"></div>
+<div class="locationlive2 locationlive fullname hidden"></div>
 <!-- Join Date -->
-<div class="joinlive4 joinlive fullname"></div>
+<div class="joinlive2 joinlive fullname hidden"></div>
 <!-- Leave Date -->
-<div class="leavelive4 leavelive fullname"></div>
+<div class="leavelive2 leavelive fullname hidden"></div>
 <!-- Description -->
-<div class="deslive4 deslive"></div>
+<div class="deslive2 deslive hidden"></div>
 
-<!-- Institute -->
-<div class="instlive5 instlive"></div>
+<!-- Institute 3 -->
+<div class="instlive3 instlive hidden"></div>
 <!-- Course -->
-<div class="courselive5 courselive fullname"></div>
+<div class="courselive3 courselive fullname hidden"></div>
 <!-- Location -->
-<div class="locationlive5 locationlive fullname"></div>
+<div class="locationlive3 locationlive fullname hidden"></div>
 <!-- Join Date -->
-<div class="joinlive5 joinlive fullname"></div>
+<div class="joinlive3 joinlive fullname hidden"></div>
 <!-- Leave Date -->
-<div class="leavelive5 leavelive fullname"></div>
+<div class="leavelive3 leavelive fullname hidden"></div>
 <!-- Description -->
-<div class="deslive5 deslive"></div>
+<div class="deslive3 deslive hidden"></div>
 
-<!-- Institute -->
+<!-- Institute 4 -->
+<div class="instlive4 instlive hidden"></div>
+<!-- Course -->
+<div class="courselive4 courselive fullname hidden"></div>
+<!-- Location -->
+<div class="locationlive4 locationlive fullname hidden"></div>
+<!-- Join Date -->
+<div class="joinlive4 joinlive fullname hidden"></div>
+<!-- Leave Date -->
+<div class="leavelive4 leavelive fullname hidden"></div>
+<!-- Description -->
+<div class="deslive4 deslive hidden"></div>
+
+<!-- Institute 5 -->
+<div class="instlive5 instlive hidden"></div>
+<!-- Course -->
+<div class="courselive5 courselive fullname hidden"></div>
+<!-- Location -->
+<div class="locationlive5 locationlive fullname hidden"></div>
+<!-- Join Date -->
+<div class="joinlive5 joinlive fullname hidden"></div>
+<!-- Leave Date -->
+<div class="leavelive5 leavelive fullname hidden"></div>
+<!-- Description -->
+<div class="deslive5 deslive hidden"></div>
+
+<!-- Institute 6 -->
+<div class="instlive6 instlive hidden"></div>
+<!-- Course -->
+<div class="courselive6 courselive fullname hidden"></div>
+<!-- Location -->
+<div class="locationlive6 locationlive fullname hidden"></div>
+<!-- Join Date -->
+<div class="joinlive6 joinlive fullname hidden"></div>
+<!-- Leave Date -->
+<div class="leavelive6 leavelive fullname hidden"></div>
+<!-- Description -->
+<div class="deslive6 deslive hidden"></div>
+
+<!-- Institute 7 -->
+<div class="instlive7 instlive hidden"></div>
+<!-- Course -->
+<div class="courselive7 courselive fullname hidden"></div>
+<!-- Location -->
+<div class="locationlive7 locationlive fullname hidden"></div>
+<!-- Join Date -->
+<div class="joinlive7 joinlive fullname hidden"></div>
+<!-- Leave Date -->
+<div class="leavelive7 leavelive fullname hidden"></div>
+<!-- Description -->
+<div class="deslive7 deslive hidden"></div>
+
+<!-- Institute 8 -->
+<div class="instlive8 instlive hidden"></div>
+<!-- Course -->
+<div class="courselive8 courselive fullname hidden"></div>
+<!-- Location -->
+<div class="locationlive8 locationlive fullname hidden"></div>
+<!-- Join Date -->
+<div class="joinlive8 joinlive fullname hidden"></div>
+<!-- Leave Date -->
+<div class="leavelive8 leavelive fullname hidden"></div>
+<!-- Description -->
+<div class="deslive8 deslive hidden"></div>
+
+<!-- Institute 9 -->
+<div class="instlive9 instlive hidden"></div>
+<!-- Course -->
+<div class="courselive9 courselive fullname hidden"></div>
+<!-- Location -->
+<div class="locationlive9 locationlive fullname hidden"></div>
+<!-- Join Date -->
+<div class="joinlive9 joinlive fullname hidden"></div>
+<!-- Leave Date -->
+<div class="leavelive9 leavelive fullname hidden"></div>
+<!-- Description -->
+<div class="deslive9 deslive hidden"></div>
+
+<!-- Institute 10 -->
+<div class="instlive10 instlive hidden"></div>
+<!-- Course -->
+<div class="courselive10 courselive fullname hidden"></div>
+<!-- Location -->
+<div class="locationlive10 locationlive fullname hidden"></div>
+<!-- Join Date -->
+<div class="joinlive10 joinlive fullname hidden"></div>
+<!-- Leave Date -->
+<div class="leavelive10 leavelive fullname hidden"></div>
+<!-- Description -->
+<div class="deslive10 deslive hidden"></div>
 
 
 

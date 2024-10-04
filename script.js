@@ -7,7 +7,10 @@ function addAchievement() {
   const container = document.querySelector(".achieveform");
   const newAchievement = document.createElement("div");
   newAchievement.classList.add("achieveinput");
-
+  const preview1 = document.querySelector(`.desitem${achievementCounter}`);
+  const preview2 = document.querySelector(`.achieveitem${achievementCounter}`);
+  preview1.classList.remove("hidden");
+  preview2.classList.remove("hidden");
   // Set up the new achievement input HTML with dynamic class names and event listeners
   newAchievement.innerHTML = `
       <div class="achieveitem">
@@ -103,6 +106,18 @@ function addExp() {
   expcounter++;
   const container = document.querySelector(".exp");
   const column = document.createElement("div");
+  const preview1 = document.querySelector(`.titleexp${expcounter}`);
+  const preview2 = document.querySelector(`.companyexp${expcounter}`);
+  const preview3 = document.querySelector(`.locationexp${expcounter}`);
+  const preview4 = document.querySelector(`.joinexp${expcounter}`);
+  const preview5 = document.querySelector(`.leaveexp${expcounter}`);
+  const preview6 = document.querySelector(`.desexp${expcounter}`);
+  preview1.classList.remove("hidden");
+  preview2.classList.remove("hidden");
+  preview3.classList.remove("hidden");
+  preview4.classList.remove("hidden");
+  preview5.classList.remove("hidden");
+  preview6.classList.remove("hidden");
 
   // Assigning a unique ID to each new experience block
   column.classList.add("expbox");
@@ -196,6 +211,9 @@ function updateJoin(counter) {
   const input = document.querySelector(`.expjoin${counter}`);
   const livePreview = document.querySelector(`.joinexp${counter}`);
   livePreview.textContent = input ? input.value : "";
+  const color = document.querySelector(`.colorss`).value;
+  livePreview.style.backgroundColor = color ? color : "#fff";
+  livePreview.style.color = "White";
 }
 
 // Function to update Leaving Date
@@ -203,6 +221,9 @@ function updateLeave(counter) {
   const input = document.querySelector(`.expleave${counter}`);
   const livePreview = document.querySelector(`.leaveexp${counter}`);
   livePreview.textContent = input ? input.value : "";
+  const color = document.querySelector(`.colorss`).value;
+  livePreview.style.backgroundColor = color ? color : "#fff";
+  livePreview.style.color = "White";
 }
 
 // Function to update Description
@@ -218,6 +239,18 @@ function addEdu() {
   const newEdu = document.createElement("div");
   newEdu.classList.add("edubox");
   newEdu.setAttribute("id", `edubox${eduCounter}`); // Assign a unique ID
+  const preview1 = document.querySelector(`.instlive${eduCounter}`);
+  const preview2 = document.querySelector(`.courselive${eduCounter}`);
+  const preview3 = document.querySelector(`.locationlive${eduCounter}`);
+  const preview4 = document.querySelector(`.joinlive${eduCounter}`);
+  const preview5 = document.querySelector(`.leavelive${eduCounter}`);
+  const preview6 = document.querySelector(`.deslive${eduCounter}`);
+  preview1.classList.remove("hidden");
+  preview2.classList.remove("hidden");
+  preview3.classList.remove("hidden");
+  preview4.classList.remove("hidden");
+  preview5.classList.remove("hidden");
+  preview6.classList.remove("hidden");
 
   newEdu.innerHTML = `
     <div class="column">
@@ -299,12 +332,18 @@ function updateJoinDate(counter) {
   const input = document.querySelector(`.edujoin${counter}`);
   const livePreview = document.querySelector(`.joinlive${counter}`);
   livePreview.textContent = input ? input.value : "";
+  const color = document.querySelector(`.colorss`).value;
+  livePreview.style.backgroundColor = color ? color : "#fff";
+  livePreview.style.color = "White";
 }
 
 function updateLeaveDate(counter) {
   const input = document.querySelector(`.eduend${counter}`);
   const livePreview = document.querySelector(`.leavelive${counter}`);
   livePreview.textContent = input ? input.value : "";
+  const color = document.querySelector(`.colorss`).value;
+  livePreview.style.backgroundColor = color ? color : "#fff";
+  livePreview.style.color = "White";
 }
 
 function updateDescription(counter) {
