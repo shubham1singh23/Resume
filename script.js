@@ -429,5 +429,9 @@ function download() {
     })
     .save();
 }
-
+function updatecolor() {
+  const right = document.querySelector(".leftlive");
+  const color = document.querySelector(".colorss").value;
+  right.style.backgroundColor = color;
+}
 //function for the Achievement

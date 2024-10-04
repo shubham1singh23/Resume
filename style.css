@@ -211,7 +211,7 @@ input:hover {
 .leftlive {
   background-color: #333;
   color: white;
-  width: 25%;
+  width: 30%;
   overflow-wrap: break-word; /* Allow long words to break */
   word-wrap: break-word; /* Ensure long words wrap */
   hyphens: auto;
@@ -233,7 +233,7 @@ input:hover {
   margin-top: 5px;
 }
 .rightlive {
-  width: 75%;
+  width: 70%;
   margin: 10px;
   margin-right: 80px;
   overflow-wrap: break-word; /* Allow long words to break */
@@ -249,7 +249,7 @@ input:hover {
   margin-left: 2rem;
   gap: 5px;
   display: inline-flex;
-  font-size: 25px;
+  font-size: 18px;
 }
 .imagepreview {
   z-index: 0;
@@ -287,24 +287,35 @@ input:hover {
   font-weight: 300;
 }
 .joinexp,
-.joinlive {
-  font-size: medium;
-  padding: 2px;
-}
-.protitle {
-  font-weight: bolder;
-  font-size: 25px;
-}
+.joinlive,
 .leaveexp,
 .leavelive {
+  font-size: 13px;
   padding: 2px;
-  font-size: medium;
 }
-.instlive {
+.aboutitem,
+.skillitem,
+.achieveitem,
+.titleexp,
+.instlive,
+.protitle {
+  font-size: 15px;
   font-weight: bolder;
 }
+.desitem,
+.companyexp,
+.courselive,
+.locationlive,
+.locationexp,
+.desexp,
+.prodes,
+.gitlink,
 .deslive {
-  font-size: smaller;
+  font-size: 14px;
+}
+
+.tops {
+  margin-top: 10px;
 }
 .hidden {
   display: none;
