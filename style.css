@@ -227,7 +227,19 @@ input:hover {
   display: inline;
 }
 .liveheading {
-  margin: 0px10px;
+  margin: 10px 0px;
+}
+.aboutliveitems5,
+.aboutliveitems6,
+.aboutliveitems4 {
+  display: flex;
+  align-items: center;
+}
+.aboutliveitem7 img {
+  display: inline;
+}
+svg {
+  display: inline;
 }
 .tops {
   margin-top: 5px;
@@ -319,6 +331,12 @@ input:hover {
 }
 .hidden {
   display: none;
+}
+.gmail {
+  height: 21px;
+  width: 21px;
+  margin-left: 1px;
+  display: inline;
 }
 .colorss {
   -webkit-appearance: none;

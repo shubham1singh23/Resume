@@ -46,32 +46,34 @@
               placeholder="eg. Shubham" />
           </div>
           <div class="about">
-            <label for="" class="item">Second Name</label><input type="text" class="item inputboxes" placeholder="eg. Singh" />
+            <label for="" class="item">Second Name</label><input type="text" class="item inputboxes" placeholder="eg. Vinod" />
           </div>
           <div class="about">
-            <label for="" class="item">Last Name</label><input type="text" class="item inputboxes" placeholder="eg. Vinod" />
+            <label for="" class="item">Last Name</label><input type="text" class="item inputboxes" placeholder="eg. Singh" />
           </div>
         </div>
         <div class="column">
           <div class="about" id="names">
             <label for="names" class="item">Profile Image</label><input type="file" class="item inputboxes pro" />
           </div>
+          
           <div class="about">
-            <label for="" class="item">Designation</label><input type="text" class="item inputboxes"
-              placeholder="eg. Software Engineer" />
+            <label for="" class="item">LinkedIn</label><input type="text" class="item inputboxes" placeholder="username" />
           </div>
-          <div class="about">
-            <label for="" class="item">Address</label><input type="text" class="item inputboxes" placeholder="eg. Dombivli" />
-          </div>
-        </div>
-        <div class="column">
           <div class="about" id="names">
             <label for="names" class="item"> Email</label><input type="text" class="item inputboxes"
               placeholder="eg.shubham1singh23@gmail.com" />
           </div>
+        </div>
+        <div class="column">
+          
           <div class="about">
             <label for="" class="item">Phone Number</label><input type="text" class="item inputboxes"
               placeholder="eg.8850852269" />
+          </div>
+          <div class="about">
+            <label for="" class="item">Address</label><input type="text" class="item inputboxes"
+              placeholder="eg. dombivli" />
           </div>
           <div class="about">
             <label for="" class="item">Summary</label><input type="text" class="item inputboxes" placeholder="eg.About you" />
@@ -85,10 +87,10 @@
       <div class="heading align">
         <h2>Skills</h2>
       </div>
-      <div class="skillinput align">
+      <div class="skillinput1 skillinput align">
         <div class="skillbox">
           <label for="" class="item">Skill Name</label>
-          <input type="text" class="item inputskill1" placeholder="eg. Java" oninput="updateskill(1)" />
+          <input type="text" class="item inputskill1" list="skills-list" placeholder="eg. Java" oninput="updateskill(1)" />
         </div>
         <div class="skillbtn">
           <div class="add skilladd" onclick="addSkill()">+</div>
@@ -96,6 +98,20 @@
       </div>
     </div>
   </div>
+  <datalist id="skills-list">
+    <option value="JavaScript">
+    <option value="Python">
+    <option value="Java">
+    <option value="C++">
+    <option value="C#">
+    <option value="Ruby">
+    <option value="PHP">
+    <option value="Swift">
+    <option value="Go">
+    <option value="Rust">
+    <option value="Kotlin">
+    <option value="TypeScript">
+</datalist>
   <div class="achieve">
     <div class="box">
       <div class="heading align">
@@ -243,15 +259,30 @@
           <div class="leftcontainer leftchild">
             <div class="aboutlive">
               <div class="liveheading"><h3>About</h3></div>
+              <div class="aboutliveitem0 aboutitem fullname"></div>
               <div class="aboutliveitem1 aboutitem fullname"></div>
               <div class="aboutliveitem2 aboutitem fullname"></div>
-              <div class="aboutliveitem3 aboutitem fullname"></div>
-              <div class="aboutliveitem4 aboutitem"></div>
-              <div class="aboutliveitem5 aboutitem"></div>
-              <div class="aboutliveitem6 aboutitem"></div>
-              <div class="aboutliveitem7 aboutitem"></div>
+              <div class="aboutliveitem3 aboutitem ">
+               
+            </div>
+              <div class="aboutliveitems4">
+                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 48 48">
+                  <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"></path><path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"></path>
+                  </svg>
+                <div class="aboutliveitem4 aboutitem"></div>
+              </div>
+              <div class="aboutliveitems5"> 
+                <img src="./gmail.png" alt="" class="gmail">
+                <div class="aboutliveitem5 aboutitem"></div>
+              </div>
+              <div class="aboutliveitems6 ">
+               <img src="./telephone.png" class="gmail" alt="">
+                <div class="aboutliveitem6 aboutitem"></div>
+              </div>
+              <div class="aboutliveitem7 aboutitem ">
+                
+              </div>
               <div class="aboutliveitem8 aboutitem"></div>
-              <div class="aboutliveitem9 aboutitem"></div>
   
             </div>
             <div class="liveskills leftchild">

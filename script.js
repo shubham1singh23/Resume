@@ -91,7 +91,7 @@ document.querySelector(".desinput1").addEventListener("input", function () {
 let skillcounter = 1;
 function addSkill() {
   skillcounter++;
-  const container = document.querySelector(".skillinput");
+  const container = document.querySelector(".skillinput1");
   const newSkill = document.createElement("div");
   newSkill.classList.add("skillbox");
   newSkill.innerHTML = ` <label for="" class="item">Skill Name</label>
@@ -413,6 +413,7 @@ for (let i = 0; i < inputboxes.length; i++) {
     if (i === 3) {
       return;
     }
+
     aboutitem[i].textContent = inputboxes[i].value;
   });
 }
