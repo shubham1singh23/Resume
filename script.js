@@ -283,7 +283,7 @@ function addEdu() {
       </div>
     </div>
 
-    <button type="button" class="remove-btn right" onclick="removeEducation(eduCounter)">-</button>
+    <button type="button" class="remove-btn right" onclick="removeEducation(${eduCounter})">-</button>
   `;
 
   container.insertBefore(newEdu, container.lastElementChild);

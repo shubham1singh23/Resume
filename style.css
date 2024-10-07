@@ -183,6 +183,7 @@ input {
   padding: 15px;
   border-radius: 4px;
   margin: 20px;
+  margin-bottom: 139px;
   transition: all ease 1s;
 }
 .download:hover {
