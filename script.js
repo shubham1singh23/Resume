@@ -95,7 +95,7 @@ function addSkill() {
   const newSkill = document.createElement("div");
   newSkill.classList.add("skillbox");
   newSkill.innerHTML = ` <label for="" class="item">Skill Name</label>
-            <input type="text" class="item inputskill${skillcounter}" placeholder="eg. Java" oninput="updateskill(skillcounter)" />
+            <input type="text" list="skills-list" class="item inputskill${skillcounter}" placeholder="eg. Java" oninput="updateskill(skillcounter)" />
             <button type="button" class="remove-btn" onclick="removeSkill(this)">-</button>
   `;
   container.insertBefore(newSkill, container.lastElementChild);
