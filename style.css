@@ -256,7 +256,7 @@ svg {
 .live {
   border: 2px solid black;
   width: 80vw;
-  max-width: 100%;
+  /* max-width: 100%; */
   padding: 0;
   margin: auto;
   margin-left: 2rem;
@@ -374,7 +374,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
     flex-direction: column;
   }
   .column input {
-    width: 85vw;
+    width: 80vw;
     margin-left: 10px;
   }
 
@@ -405,6 +405,59 @@ input[type="color"]::-webkit-color-swatch-wrapper {
   .skillbox label {
     margin: 0px;
   }
+  .desitem,
+.companyexp,
+.courselive,
+.locationlive,
+.locationexp,
+.desexp,
+.prodes,
+.gitlink,
+.deslive {
+  font-size: 12px;
+}
+.joinexp,
+.joinlive,
+.leaveexp,
+.leavelive {
+  font-size: 10px;
+  padding: 2px;
+}
+.live {
+  border: 2px solid black;
+  width: 83vw;
+  max-width: 100%;
+  padding: 0;
+  margin: auto;
+  margin-left: 2rem;
+  gap: 5px;
+  display: inline-flex;
+  font-size: 14px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  
+}
+.leftlive {
+  background-color: #333;
+  color: white;
+  width: 35%;
+  min-width: 70px; /* Prevent shrinking */
+  max-width: 70px; /* Prevent growing */
+  overflow-wrap: break-word; /* Allow long words to break */
+  word-wrap: break-word; /* Ensure long words wrap */
+  hyphens: auto;
+  margin: 0px;
+  padding-right: 2px;
+}
+.rightlive {
+  width: 75%;
+  margin: 10px;
+  margin-right: 80px;
+  overflow-wrap: break-word; /* Allow long words to break */
+  word-wrap: break-word; /* Ensure long words wrap */
+  white-space:normal;
+}
 }
 .desire {
   font-weight: bolder;

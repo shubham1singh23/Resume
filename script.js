@@ -173,12 +173,30 @@ function removeExperience(counter) {
   const leavePreview = document.querySelector(`.leaveexp${counter}`);
   const descriptionPreview = document.querySelector(`.desexp${counter}`);
 
-  if (titlePreview) titlePreview.textContent = "";
-  if (companyPreview) companyPreview.textContent = "";
-  if (locationPreview) locationPreview.textContent = "";
-  if (joinPreview) joinPreview.textContent = "";
-  if (leavePreview) leavePreview.textContent = "";
-  if (descriptionPreview) descriptionPreview.textContent = "";
+  if (titlePreview) {
+    titlePreview.textContent = "";
+    titlePreview.classList.add("hidden");
+  }
+  if (companyPreview) {
+    companyPreview.textContent = "";
+    companyPreview.classList.add("hidden");
+  }
+  if (locationPreview) {
+    locationPreview.textContent = "";
+    locationPreview.classList.add("hidden");
+  }
+  if (joinPreview) {
+    joinPreview.textContent = "";
+    joinPreview.classList.add("hidden");
+  }
+  if (leavePreview) {
+    leavePreview.textContent = "";
+    leavePreview.classList.add("hidden");
+  }
+  if (descriptionPreview) {
+    descriptionPreview.textContent = "";
+    descriptionPreview.classList.add("hidden");
+  }
 }
 // Function to update Title
 function updateTitle(counter) {
@@ -303,12 +321,30 @@ function removeEducation(counter) {
   const leaveDatePreview = document.querySelector(`.leavelive${counter}`);
   const descriptionPreview = document.querySelector(`.deslive${counter}`);
 
-  if (institutePreview) institutePreview.textContent = "";
-  if (coursePreview) coursePreview.textContent = "";
-  if (locationPreview) locationPreview.textContent = "";
-  if (joinDatePreview) joinDatePreview.textContent = "";
-  if (leaveDatePreview) leaveDatePreview.textContent = "";
-  if (descriptionPreview) descriptionPreview.textContent = "";
+  if (institutePreview) {
+    institutePreview.textContent = "";
+    institutePreview.classList.add("hidden");
+  }
+  if (coursePreview) {
+    coursePreview.textContent = "";
+    coursePreview.classList.add("hidden");
+  }
+  if (locationPreview) {
+    locationPreview.textContent = "";
+    locationPreview.classList.add("hidden");
+  }
+  if (joinDatePreview) {
+    joinDatePreview.textContent = "";
+    joinDatePreview.classList.add("hidden");
+  }
+  if (leaveDatePreview) {
+    leaveDatePreview.textContent = "";
+    leaveDatePreview.classList.add("hidden");
+  }
+  if (descriptionPreview) {
+    descriptionPreview.textContent = "";
+    descriptionPreview.classList.add("hidden");
+  }
 }
 function updateInstitute(counter) {
   const input = document.querySelector(`.eduinst${counter}`);
