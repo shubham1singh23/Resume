@@ -438,6 +438,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
   white-space: normal;
   
 }
+
 .leftlive {
   background-color: #333;
   color: white;
@@ -449,6 +450,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
   hyphens: auto;
   margin: 0px;
   padding-right: 2px;
+  font-size: 2px;
 }
 .rightlive {
   width: 75%;
@@ -457,6 +459,12 @@ input[type="color"]::-webkit-color-swatch-wrapper {
   overflow-wrap: break-word; /* Allow long words to break */
   word-wrap: break-word; /* Ensure long words wrap */
   white-space:normal;
+}
+.liveheading{
+  font-size: 14px;
+}
+.aboutitem{
+  font-size: 10px;
 }
 }
 .desire {
